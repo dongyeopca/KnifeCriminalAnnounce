@@ -20,9 +20,9 @@ function TableItem({ location, time, other, message }: tableItemProps) {
           })
         }
       >
-        <td className="flex-1 text-center">{location}</td>
-        <td className="flex-1 text-center">{time}</td>
-        <td className="flex-1 text-center" onClick={(e) => e.stopPropagation()}>
+        <td className="flex-1 text-center text-black">{location}</td>
+        <td className="flex-1 text-center text-black">{time}</td>
+        <td className="flex-1 text-center text-black" onClick={(e) => e.stopPropagation()}>
           <a href={other}>[기사 바로가기]</a>
         </td>
       </tr>

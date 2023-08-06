@@ -50,10 +50,10 @@ function Portal({
             className="rounded-[20px] mr-2 self-start"
           />
           <div>
-            <p className="font-thin mb-1">지역:{location} </p>
-            <p className="font-thin  mb-1">예고시간: {time}</p>
-            <p className="font-thin  mb-1">기사 요약:{message}</p>
-            <p className="font-thin  mb-1">
+            <p className="font-thin mb-1 text-black">지역:{location} </p>
+            <p className="font-thin  mb-1 text-black">예고시간: {time}</p>
+            <p className="font-thin  mb-1 text-black">기사 요약:{message}</p>
+            <p className="font-thin  mb-1 text-black">
               <a href={other}>[기사 바로가기]</a>
             </p>
           </div>
