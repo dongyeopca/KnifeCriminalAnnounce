@@ -36,7 +36,10 @@ function Portal({
           e.stopPropagation();
         }}
       >
-        <h1 className="text-blue-400 text-center text-lg mb-4">예보 상세 정보</h1>
+        <h1 className="text-blue-400 text-center text-lg mb-1">예고 상세 정보</h1>
+        <p className="text-sm font-thin text-center mb-3 text-gray-400">
+          본 내용은 chat-gpt와 파이썬 크롤링을 통해 구성되었습니다. 표현에 있어 어색함이 있을수 있습니다.
+        </p>
         <div className="flex">
           <img
             src={encodeURI(
@@ -47,10 +50,10 @@ function Portal({
             className="rounded-[20px] mr-2 self-start"
           />
           <div>
-            <p>지역:{location} </p>
-            <p>예고시간: {time}</p>
-            <p>기사 요약:{message}</p>
-            <p>
+            <p className="font-thin mb-1">지역:{location} </p>
+            <p className="font-thin  mb-1">예고시간: {time}</p>
+            <p className="font-thin  mb-1">기사 요약:{message}</p>
+            <p className="font-thin  mb-1">
               <a href={other}>[기사 바로가기]</a>
             </p>
           </div>
