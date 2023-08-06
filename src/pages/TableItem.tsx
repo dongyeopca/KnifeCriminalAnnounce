@@ -13,7 +13,7 @@ function TableItem({ location, time, other, message }: tableItemProps) {
   return (
     <>
       <tr
-        className="flex shadow-md bg-white p-2 mb-5 justify-around rounded-lg"
+        className="flex shadow-md bg-white p-2 mb-5 justify-around rounded-lg cursor-pointer"
         onClick={() =>
           setModal((prev) => {
             return !prev;
