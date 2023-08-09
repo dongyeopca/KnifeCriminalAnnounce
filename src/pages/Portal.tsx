@@ -40,23 +40,13 @@ function Portal({
         <p className="text-sm font-thin text-center mb-3 text-gray-400">
           본 내용은 chat-gpt와 파이썬 크롤링을 통해 구성되었습니다. 표현에 있어 어색함이 있을수 있습니다.
         </p>
-        <div className="flex">
-          <img
-            src={encodeURI(
-              `https://maps.googleapis.com/maps/api/staticmap?center=${location}&zoom=15&size=200x200&key=${process.env.NEXT_PUBLIC_MAP_API_KEY}`
-            )}
-            width={200}
-            height={200}
-            className="rounded-[20px] mr-2 self-start"
-          />
-          <div>
-            <p className="font-thin mb-1 text-black">지역:{location} </p>
-            <p className="font-thin  mb-1 text-black">예고시간: {time}</p>
-            <p className="font-thin  mb-1 text-black">기사 요약:{message}</p>
-            <p className="font-thin  mb-1 text-black">
-              <a href={other}>[기사 바로가기]</a>
-            </p>
-          </div>
+        <div>
+          <p className="font-thin mb-1 text-black">지역:{location} </p>
+          <p className="font-thin  mb-1 text-black">예고시간: {time}</p>
+          <p className="font-thin  mb-1 text-black">기사 요약:{message}</p>
+          <p className="font-thin  mb-1 text-black">
+            <a href={other}>[기사 바로가기]</a>
+          </p>
         </div>
       </div>
     </div>
